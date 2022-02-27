@@ -1,20 +1,33 @@
 import React from "react";
+import { Link,Outlet } from "react-router-dom";
+import "./style.css";
 
 const MobileList = () => {
     return(
-        <div style={{textAlign:'center'}}>
+        <div>
             <div className="card" style={ {width: '18rem'}}>
-                <div className="card-body">
-                    <h5 className="card-title">I Phone</h5>
-                    <h6 className="card-subtitle mb-2 text-muted">Rs 1,00,000</h6>
-                    <p className="card-text">Voluptate non do incididunt enim magna nostrud exercitation pariatur ea et laborum.</p>
-                </div>
-                <div className="card-body">
-                    <h5 className="card-title"> One Plus </h5>
-                    <h6 className="card-subtitle mb-2 text-muted">Rs 30,000</h6>
-                    <p className="card-text">Aliqua laborum anim aliqua velit consequat commodo labore irure proident occaecat non.</p>
-                </div>
-            </div> </div>
+                <ul class="list-group">
+                    <li className="list-group-item">
+                        <Link to="/products/mobile/iphone" className="btn btn-primary">iPhone</Link>
+                    </li>
+                    <li className="list-group-item">
+                        <Link to="/products/mobile/vivo" className="btn btn-primary">Vivo</Link>
+                    </li>
+                    <li className="list-group-item">
+                        <Link to="/products/mobile/samsung" className="btn btn-primary">Samsung</Link>
+                    </li>
+                    <li className="list-group-item">
+                        <Link to="/products/mobile/oneplus" className="btn btn-primary">OnePlus</Link>
+                    </li>
+                    <li className="list-group-item">
+                        <Link to="/products/mobile/mi" className="btn btn-primary">Redmi</Link>
+                    </li>
+                </ul>
+            </div>
+            <div id="outlet_cont">
+            <Outlet />
+            </div>
+            </div>
     )
 }
 
