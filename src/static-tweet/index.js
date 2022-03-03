@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import Avatar from "../Avatar";
+import Avatar from "./Avatar";
 import Author from "./Author";
 import { Message as Msg } from "./Message";
 import Time from "./Time";
