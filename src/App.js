@@ -1,15 +1,13 @@
-import React from "react";
-import CLassComponent from "./Hooks/ClassCounter";
-import Hooks from "./Hooks/Hooks"
-import HooksArray from "./Hooks/HooksArray";
-import ClassCounterOne from "./Hooks/ClassCounterOne";
-import HookCounterOne from "./Hooks/HookCounterOne";
-const App = () => {
-    return (
-        <div>
-            <HookCounterOne />
-        </div>
-    )
+import React from 'react'
+import GithubApi from './Fetch/GithubApi'
+import "./Fetch/style.css"
+
+function App() {
+  return (
+    <div>
+        <GithubApi />
+    </div>
+  )
 }
 
 export default App
